@@ -1,0 +1,54 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 32,
+  "spacing": 6,
+
+  "modules-left": ["clock", "temperature", "network"],
+  "modules-center": ["niri/workspaces"],
+  "modules-right": ["pulseaudio", "cpu", "memory", "tray"],
+
+  "workspaces": {
+    "disable-scroll": false,
+    "all-outputs": true,
+    "format": "{name}"
+  },
+
+  "clock": {
+    "format": " {:%H:%M}"
+  },
+
+  "cpu": {
+    "format": " {usage}%"
+  },
+
+  "memory": {
+    "format": " {used}G"
+  },
+
+  "temperature": {
+    "format": " {temperatureC}°C"
+  },
+
+  "network": {
+    "format-wifi": " {signalStrength}%",
+    "format-ethernet": "󰈀 wired"
+  },
+
+  "battery": {
+    "format": " {capacity}%",
+    "states": {
+      "warning": 30,
+      "critical": 15
+    }
+  },
+
+  "pulseaudio": {
+    "format": " {volume}%",
+    "format-muted": "󰖁 muted"
+  },
+  "niri/workspaces": {
+  "all-outputs": true,
+  "format": "{index}"
+  }
+}
