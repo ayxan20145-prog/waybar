@@ -28,6 +28,13 @@ window#waybar {
   border-radius: 999px;
   color: #ffffff;
 }
+#custom-notification {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 4px 10px;
+  margin: 4px 3px;
+  border-radius: 999px;
+  color: #ffffff;
+}
 
 /* WORKSPACES like your screenshot */
 #workspaces button {
